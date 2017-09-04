@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/info_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/savedata_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/savedata_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保存信息" />
+
+
+            <Button
+                android:id="@+id/draw_curve_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="绘制波形" />
+            <Button
+                android:id="@+id/connect_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扫描设备"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
